@@ -1,0 +1,8 @@
+entity Produit {
+	name String required unique,
+    code String required unique, 
+    expiratedDate Instant required,
+    price Double required
+}
+dto Produit with mapstruct
+paginate Produit with pagination
